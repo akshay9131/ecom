@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+.imagediv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center{
+    height: 40%;
+    width: 30%;
+    /* display: block;
+    justify-content: center;
+    align-items: center; */
+    /* background-color: black; */
+    text-align: center;
+}
+
+.sucImg{
+    height: 100%;
+    
+}
+
+h1{
+    color: rgb(142, 136, 129);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px;
+}
+
+.cs{
+    background-color: rgb(142, 136, 129);
+    color: rgb(245, 241, 241);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+}

@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.app{
+    padding: 0 20px;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(245, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.carticon{
+    /* font-size: 50px; */
+    /* background-color: antiquewhite; */
+    color: rgb(142, 136, 129);
+    text-decoration: none;
+    size: 90px;
+}
+
+.cartdiv{
+    position: relative;
+}
+
+
+.carticon i{
+    font-size: 30px;
+}
+
+#cartCount{
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    
+}
+
+h1{
+    font-family: forte;
+    font-weight: 300;
+    color: rgb(142, 136, 129);
+}
+
+.lgbtn{
+    background-color: rgb(142, 136, 129);
+    color: rgb(245, 241, 241);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+/* .card-link{
+    
+} */
+
+i{
+    font-size: 20px;
+}
+
+.main{
+    width: 100%;
+    background-color: rgb(245, 241, 241);
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust as per your need */
+  gap: 20px;
+  padding: 20px;
+}
+
+.card{
+    width: 100%;
+    background-color: rgb(142, 136, 129);
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.card-link{
+    text-decoration: none;
+}
+
+.top{
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+    
+}
+.btm{
+    padding: 10px;
+    height: 25%;
+    
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    background-color: rgb(142, 136, 129);
+}
+
+
+h2{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+    color: rgb(245, 241, 241);
+}
+
+h3{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+    color: rgb(245, 241, 241);
+}
+
+.pageDiv{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(245, 241, 241);
+    padding-right: 40px;
+}
+
+.pagination{
+    padding: 10px 4px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* width: 0%; */
+    background-color: rgb(142, 136, 129);
+}
+
+.pagination a{
+    color: rgb(245, 241, 241);
+    text-decoration: none;
+    margin: 10px 10px ;
+}
+.pagination a.active {
+    font-weight: bold;
+    color: #000;
+  }
+
+.atc{
+    padding: 10px 10px;
+}  
+
+.atcbtn{
+    background-color: rgb(245, 241, 241);
+    color: rgb(142, 136, 129);
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.search-form{
+    width: 40%;
+}
+
+.searchInput{
+    width: 80%;
+    padding: 10px 5px;
+    border: 2px solid rgb(142, 136, 129);
+    border-radius: 20px;
+    color: rgb(142, 136, 129);
+}
+
+

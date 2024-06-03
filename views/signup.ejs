@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-comm | Signup</title>
+    <link rel="stylesheet" href="../styleSheet/signup.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="loginform">
+            <form id="logForm">
+                <h1>Create Account !</h1>
+
+                <p id="responseMessage"></p>
+                <input type="text" , id="name" name="name" , placeholder="Full name">
+                <input type="text" , id="email" name="email" , placeholder="Email address">
+
+                <input type="text" , id="mobile" name="mobile" , placeholder="Mobile number">
+                <div class="gendiv">
+                    <label class="genlabel" for="male">Male</label>
+                    <input class="gen" type="radio" id="male" name="gender" value="male">
+                    <br>
+                    <label class="genlabel" for="female">Female</label>
+                    <input class="gen" type="radio" id="female" name="gender" value="female">
+                    <br>
+                    <label class="genlabel" for="other">Other</label>
+                    <input class="gen" type="radio" id="other" name="gender" value="other">
+                </div>
+                <input type="password" , id="password" name="password" , placeholder="Enter password">
+                <button type="submit"> Sign-Up</button>
+                
+            </form>
+            <h4>Already have an account ? <a href="/">log In</a></h4>
+        </div>
+    </div>
+
+
+    <script src="../js/script2.js"></script>
+</body>
+
+</html>
