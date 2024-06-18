@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+
+<html lang="en-US">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Orani E-Shop</title>
+
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Google Font -->
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,300,500,700,600'
+        rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"
+        type="text/css">
+
+    <!-- Theme Stylesheet -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css"
+        integrity="sha512-i5VzKip7owqOGjb0YTF8MR2J9yBVO3FLHeazKzLp354XYTmKcqEU3UeFYUw82R8tV6JqxeATOfstCfpfPhbyEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../styleSheet/product.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-3 col-sm-4">
+
+                    <div class="logo">
+
+                        <a href="index.html">
+
+                            <img src="../images/logo_1.png" alt="Orani E-shop">
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-7 col-sm-5">
+
+                    <div class="search-form">
+
+                        <form action="/search-product" method="get" class="navbar-form" role="search">
+
+                            <div class="form-group">
+
+                                <input type="text" name="name" class="form-control" placeholder="What do you need...">
+
+                            </div>
+
+                            <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="navigation">
+
+        <nav class="navbar navbar-theme">
+
+            <div class="container">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false">
+
+                        <span class="sr-only">Menu</span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="navbar">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="/product">Home</a></li>
+
+                        <!-- <li><a href="#">About Us</a></li>
+
+                <li><a href="#">Contact Us</a></li> -->
+                        <li><a href="/logout">Log Out</a></li>
+                    </ul>
+
+                </div><!-- /.navbar-collapse -->
+
+            </div><!-- /.container-fluid -->
+
+        </nav>
+
+    </div>
+
+    <div class="featured-items">
+
+        <div class="container">
+
+            <div class="row">
+
+
+                <div class="tab-content">
+
+                    <div class="tab-pane active" id="trending">
+
+                        <% for(data of searchproducts) { %>
+                            <div class="col-md-3 col-sm-4">
+
+                                <div class="single-product">
+
+                                    <div class="product-block">
+
+                                        <img src="<%= data.image %>" alt="" class="thumbnail">
+
+                                        <div class="product-description text-center">
+
+                                            <p class="title">
+                                                <%= data.name %>
+                                            </p>
+
+                                            <p class="price">Rs. <%= data.price %>
+                                            </p>
+
+                                        </div>
+
+                                        <div class="product-hover">
+
+                                            <ul>
+
+                                                <li><a href="" class="atcbtn" data-id="<%= data.id %>"><i
+                                                            class="fa fa-cart-arrow-down"></i></a></li>
+
+                                                <li><a href=""><i class="fa fa-arrows-h"></i></a></li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <% } %>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-3">
+
+                        <div class="single-widget">
+
+                            <h2 class="widget-title">About Us</h2>
+
+                            <div class="widget-inner">
+
+                                <p>Office: 868 Fake Street, New York</p>
+
+                                <p>Phone: (08) 8827 633354</p>
+
+                                <p>Fax: (08) 08 4752 1499</p>
+
+                                <p>Email: mail@yourdomain.com</p>
+
+                                <img src="images/payment.png" alt="we accept">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-3">
+
+                        <div class="single-widget">
+
+                            <h2 class="widget-title">Information</h2>
+
+                            <div class="widget-inner">
+
+                                <ul>
+
+                                    <li><a href="">Frequently Asked Question</a></li>
+
+                                    <li><a href="">Terms and Condition</a></li>
+
+                                    <li><a href="">Privacy Policy</a></li>
+
+                                    <li><a href="">Customer Service</a></li>
+
+                                    <li><a href="">Delivery Information</a></li>
+
+                                    <li><a href="">Manufacturers</a></li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-3">
+
+                        <div class="single-widget">
+
+                            <h2 class="widget-title">Customer Care</h2>
+
+                            <div class="widget-inner">
+
+                                <ul>
+
+                                    <li><a href="">Contact Us</a></li>
+
+                                    <li><a href="">Sitemap</a></li>
+
+                                    <li><a href="">Gift Vouchers</a></li>
+
+                                    <li><a href="">Live Chat 24x7</a></li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-3">
+
+                        <div class="single-widget">
+
+                            <h2 class="widget-title">Our Services</h2>
+
+                            <div class="widget-inner">
+
+                                <ul>
+
+                                    <li><a href="">Shipping & Returns</a></li>
+
+                                    <li><a href="">Secure Shopping</a></li>
+
+                                    <li><a href="">International Shipping</a></li>
+
+                                    <li><a href="">Affiliates</a></li>
+
+                                    <li><a href="">Contact</a></li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright text-center">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <p class="copyright"> Shared by <i class="fa fa-love"></i><a
+                            href="https://bootstrapthemes.co">BootstrapThemes</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- jQuery Library -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <!-- Script -->
+
+        <script src="js/script.js"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="../js/cart_script.js"></script>
+
+</body>
+
+</html>
