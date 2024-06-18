@@ -57,7 +57,7 @@ module.exports = {
     },
 
     // count cart item
-
+    
     cartCount: async (req, res) => {
         try {
             const count = await Cart.count({ where: { user_id: req._id } });

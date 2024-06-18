@@ -8,7 +8,6 @@
 html,body{
     height: 100%;
     width: 100%;
-    /* background-color: aquamarine; */
 }
 
 .imagediv{
@@ -22,10 +21,6 @@ html,body{
 .center{
     height: 40%;
     width: 30%;
-    /* display: block;
-    justify-content: center;
-    align-items: center; */
-    /* background-color: black; */
     text-align: center;
 }
 

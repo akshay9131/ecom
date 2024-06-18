@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', async function(event) {
             const button = event.target.closest('.atcbtn');
             const productId = button.getAttribute('data-id');
-            console.log(productId);
             await addToCart(productId);
             updateCartCount();
         });
@@ -27,7 +26,6 @@ async function addToCart(productId) {
 
         const result = await response.json();
         alert('Product added to cart!');
-        console.log('Product added:', result);
     } catch (error) {
         console.error('Error:', error);
     }
